@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="90">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f1" displayName="CORE-ARDUINO" projectFiles="true">
+      <itemPath>arduino/sam/cores/arduino/Arduino.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/USB/CDC.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/Client.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/USB/HID.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/HardwareSerial.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/IPAddress.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/IPAddress.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/Print.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/Print.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/Printable.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/Reset.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/Reset.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/RingBuffer.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/RingBuffer.h</itemPath>
+      <itemPath>arduino/sam/libraries/SPI/SPI.cpp</itemPath>
+      <itemPath>arduino/sam/libraries/SPI/SPI.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/Server.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/Stream.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/Stream.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/Tone.cpp.disabled</itemPath>
+      <itemPath>arduino/sam/cores/arduino/Tone.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/UARTClass.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/UARTClass.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/USARTClass.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/USARTClass.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/USB/USBAPI.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/USB/USBCore.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/USB/USBCore.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/USB/USBDesc.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/Udp.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/WCharacter.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/WInterrupts.c</itemPath>
+      <itemPath>arduino/sam/cores/arduino/WInterrupts.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/WMath.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/WMath.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/WString.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/WString.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/binary.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/cortex_handlers.c</itemPath>
+      <itemPath>arduino/sam/cores/arduino/cxxabi-compat.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/avr/dtostrf.c</itemPath>
+      <itemPath>arduino/sam/cores/arduino/hooks.c</itemPath>
+      <itemPath>arduino/sam/cores/arduino/iar_calls_sam3.c</itemPath>
+      <itemPath>arduino/sam/cores/arduino/itoa.c</itemPath>
+      <itemPath>arduino/sam/cores/arduino/itoa.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/syscalls.h</itemPath>
+      <itemPath>arduino/sam/variants/arduino_due_x/variant.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/wiring.c</itemPath>
+      <itemPath>arduino/sam/cores/arduino/wiring.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/wiring_analog.c</itemPath>
+      <itemPath>arduino/sam/cores/arduino/wiring_analog.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/wiring_constants.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/wiring_digital.c</itemPath>
+      <itemPath>arduino/sam/cores/arduino/wiring_digital.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/wiring_private.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/wiring_pulse.cpp</itemPath>
+      <itemPath>arduino/sam/cores/arduino/wiring_pulse.h</itemPath>
+      <itemPath>arduino/sam/cores/arduino/wiring_shift.c</itemPath>
+      <itemPath>arduino/sam/cores/arduino/wiring_shift.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="f2" displayName="LIB-ARDUINO" projectFiles="true">
+      <itemPath>arduino/libraries/TFT/src/utility/Adafruit_GFX.cpp</itemPath>
+      <itemPath>arduino/libraries/TFT/src/utility/Adafruit_GFX.h</itemPath>
+      <itemPath>arduino/libraries/TFT/src/utility/Adafruit_ST7735.cpp</itemPath>
+      <itemPath>arduino/libraries/TFT/src/utility/Adafruit_ST7735.h</itemPath>
+      <itemPath>arduino/libraries/TFT/src/TFT.cpp</itemPath>
+      <itemPath>arduino/libraries/TFT/src/TFT.h</itemPath>
+      <itemPath>arduino/libraries/TFT/src/utility/glcdfont.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>main-BASE-DUE.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>arduino/sam/cores</Elem>
+    <Elem>arduino/sam/variants/arduino_due_x</Elem>
+    <Elem>arduino/sam/libraries/SPI</Elem>
+    <Elem>arduino/sam/libraries/Wire</Elem>
+    <Elem>arduino/libraries/TFT/src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>Arduino|WinAVR</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>C:/Arduino/hardware/tools/avr/avr/include</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/cores/arduino</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/variants/yun</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/cores/arduino/avr-libc</pElem>
+          </incDir>
+        </cTool>
+      </compileType>
+      <item path="arduino/libraries/TFT/src/TFT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/TFT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/Adafruit_GFX.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/Adafruit_GFX.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/Adafruit_ST7735.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/Adafruit_ST7735.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/glcdfont.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/HardwareSerial.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/IPAddress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/IPAddress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Print.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Print.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Printable.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Reset.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Reset.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/RingBuffer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/RingBuffer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Stream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Stream.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Tone.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/UARTClass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USARTClass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USARTClass.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/CDC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/HID.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/USBAPI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/USBCore.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/USBCore.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/USBDesc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Udp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WInterrupts.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WInterrupts.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WMath.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WMath.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WString.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WString.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/avr/dtostrf.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/binary.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/cortex_handlers.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/cxxabi-compat.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/hooks.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/iar_calls_sam3.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/itoa.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/itoa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/syscalls.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_analog.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_analog.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_constants.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_digital.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_digital.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_pulse.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_pulse.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_shift.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/libraries/SPI/SPI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="arduino/sam/libraries/SPI/SPI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/variants/arduino_due_x/variant.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="main-BASE-DUE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>Arduino|WinAVR</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>C:/Arduino/hardware/tools/avr/avr/include</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/cores/arduino</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/variants/yun</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/cores/arduino/avr-libc</pElem>
+          </incDir>
+          <commandLine>-w -ffunction-sections -fdata-sections -MMD -mmcu=atmega32u4</commandLine>
+          <preprocessorList>
+            <Elem>ARDUINO=155</Elem>
+            <Elem>ARDUINO_ARCH_AVR</Elem>
+            <Elem>ARDUINO_AVR_YUN</Elem>
+            <Elem>F_CPU=16000000L</Elem>
+            <Elem>USB_MANUFACTURER=</Elem>
+            <Elem>USB_PID=0x8041</Elem>
+            <Elem>USB_PRODUCT="Arduino Yun"</Elem>
+            <Elem>USB_VID=0x2341</Elem>
+          </preprocessorList>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>C:/Arduino/hardware/tools/avr/avr/include</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/cores/arduino</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/variants/yun</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/cores/arduino/avr-libc</pElem>
+          </incDir>
+          <commandLine>-w -fno-exceptions -ffunction-sections -fdata-sections -MMD -mmcu=atmega32u4</commandLine>
+          <preprocessorList>
+            <Elem>ARDUINO=155</Elem>
+            <Elem>ARDUINO_ARCH_AVR</Elem>
+            <Elem>ARDUINO_AVR_YUN</Elem>
+            <Elem>F_CPU=16000000L</Elem>
+            <Elem>USB_MANUFACTURER=</Elem>
+            <Elem>USB_PID=0x8041</Elem>
+            <Elem>USB_PRODUCT="Arduino Yun"</Elem>
+            <Elem>USB_VID=0x2341</Elem>
+          </preprocessorList>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <commandLine>-Os -Wl,--gc-sections -mmcu=atmega32u4 -L ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/FINAL.tmp -lm</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="arduino/libraries/TFT/src/TFT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/TFT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/Adafruit_GFX.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/Adafruit_GFX.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/Adafruit_ST7735.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/Adafruit_ST7735.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/glcdfont.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/HardwareSerial.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/IPAddress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/IPAddress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Print.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Print.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Printable.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Reset.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Reset.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/RingBuffer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/RingBuffer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Stream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Stream.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Tone.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/UARTClass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USARTClass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USARTClass.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/CDC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/HID.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/USBAPI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/USBCore.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/USBCore.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/USBDesc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Udp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WInterrupts.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WInterrupts.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WMath.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WMath.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WString.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WString.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/avr/dtostrf.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/binary.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/cortex_handlers.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/cxxabi-compat.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/hooks.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/iar_calls_sam3.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/itoa.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/itoa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/syscalls.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_analog.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_analog.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_constants.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_digital.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_digital.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_pulse.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_pulse.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_shift.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/libraries/SPI/SPI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="arduino/sam/libraries/SPI/SPI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/variants/arduino_due_x/variant.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="main-BASE-DUE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="ARDUINO-DUE" type="1">
+      <toolsSet>
+        <compilerSet>ARDUINO-DUE|WinAVR</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>0</developmentMode>
+          <incDir>
+            <pElem>arduino/sam/cores/arduino</pElem>
+            <pElem>arduino/sam/system/libsam</pElem>
+            <pElem>arduino/sam/system/CMSIS/Device/ATMEL/</pElem>
+            <pElem>arduino/sam/variants/arduino_due_x</pElem>
+            <pElem>arduino/sam/system/CMSIS/CMSIS/Include/</pElem>
+            <pElem>arduino/sam/cores/arduino/avr</pElem>
+            <pElem>arduino/sam/libraries/SPI</pElem>
+            <pElem>arduino/libraries/TFT/src</pElem>
+            <pElem>arduino/libraries/TFT/src/utility</pElem>
+          </incDir>
+          <commandLine>-c -g -Os -w -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -mthumb</commandLine>
+          <preprocessorList>
+            <Elem>ARDUINO=155</Elem>
+            <Elem>ARDUINO_ARCH_SAM</Elem>
+            <Elem>ARDUINO_SAM_DUE</Elem>
+            <Elem>F_CPU=84000000L</Elem>
+            <Elem>USBCON</Elem>
+            <Elem>USB_MANUFACTURER="Unknown"</Elem>
+            <Elem>USB_PID=0x003e</Elem>
+            <Elem>USB_PRODUCT="Arduino Due"</Elem>
+            <Elem>USB_VID=0x2341</Elem>
+            <Elem>__SAM3X8E__</Elem>
+            <Elem>printf=iprintf</Elem>
+          </preprocessorList>
+        </cTool>
+        <ccTool>
+          <developmentMode>0</developmentMode>
+          <commandlineTool>arm-none-eabi-g++</commandlineTool>
+          <incDir>
+            <pElem>arduino/sam/cores/arduino</pElem>
+            <pElem>arduino/sam/system/libsam</pElem>
+            <pElem>arduino/sam/system/CMSIS/Device/ATMEL/</pElem>
+            <pElem>arduino/sam/variants/arduino_due_x</pElem>
+            <pElem>arduino/sam/system/CMSIS/CMSIS/Include/</pElem>
+            <pElem>arduino/sam/cores/arduino/avr</pElem>
+            <pElem>arduino/sam/libraries/SPI</pElem>
+            <pElem>arduino/libraries/TFT/src</pElem>
+            <pElem>arduino/libraries/TFT/src/utility</pElem>
+          </incDir>
+          <commandLine>-c -g -Os -w -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb</commandLine>
+          <preprocessorList>
+            <Elem>ARDUINO=155</Elem>
+            <Elem>ARDUINO_ARCH_SAM</Elem>
+            <Elem>ARDUINO_SAM_DUE</Elem>
+            <Elem>F_CPU=84000000L</Elem>
+            <Elem>USBCON</Elem>
+            <Elem>USB_MANUFACTURER="Unknown"</Elem>
+            <Elem>USB_PID=0x003e</Elem>
+            <Elem>USB_PRODUCT="Arduino Due"</Elem>
+            <Elem>USB_VID=0x2341</Elem>
+            <Elem>__SAM3X8E__</Elem>
+            <Elem>printf=iprintf</Elem>
+          </preprocessorList>
+          <warningLevel>2</warningLevel>
+        </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/FINAL.ELF</output>
+          <commandlineTool>arm-none-eabi-g++</commandlineTool>
+          <commandLine>-Os -Wl,--gc-sections -mcpu=cortex-m3 -T"arduino\sam\variants\arduino_due_x/linker_scripts/gcc/flash.ld" -Wl,-Map,${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/FINAL.MAP -lm -lgcc -mthumb -Wl,--cref -Wl,--check-sections -Wl,--gc-sections -Wl,--entry=Reset_Handler -Wl,--unresolved-symbols=report-all -Wl,--warn-common -Wl,--warn-section-align -Wl,--warn-unresolved-symbols -Wl,--start-group "arduino/sam/variants/arduino_due_x/libsam_sam3x8e_gcc_rel.a" -Wl,--end-group</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="arduino/libraries/TFT/src/TFT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/TFT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/Adafruit_GFX.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/Adafruit_GFX.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/Adafruit_ST7735.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/Adafruit_ST7735.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/libraries/TFT/src/utility/glcdfont.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/HardwareSerial.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/IPAddress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/IPAddress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Print.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Print.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Printable.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Reset.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Reset.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/RingBuffer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/RingBuffer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Stream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Stream.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Tone.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/UARTClass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USARTClass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USARTClass.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/CDC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/HID.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/USBAPI.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/USBCore.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/USBCore.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/USB/USBDesc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/Udp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WInterrupts.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WInterrupts.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WMath.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WMath.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WString.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/WString.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/avr/dtostrf.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/binary.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/cortex_handlers.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/cxxabi-compat.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/hooks.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/iar_calls_sam3.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/itoa.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/itoa.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/syscalls.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_analog.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_analog.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_constants.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_digital.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_digital.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_pulse.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_pulse.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/cores/arduino/wiring_shift.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="arduino/sam/libraries/SPI/SPI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="arduino/sam/libraries/SPI/SPI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="arduino/sam/variants/arduino_due_x/variant.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="main-BASE-DUE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

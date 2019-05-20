@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="90">
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>3</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>3</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>avrdude -CC:\arduino\hardware/tools/avr/etc/avrdude.conf -v -v -v -v -patmega32u4 -cavr109 -PCOM3 -b4800 -D -Uflash:w:${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/A_FLASHER.HEX:i</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>avrdude -CC:\arduino\hardware/tools/avr/etc/avrdude.conf -v -v -v -v -patmega32u4 -cavr109 -PCOM3 -b4800 -D -Uflash:w:${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/A_FLASHER.HEX:i</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="ARDUINO-LEONARDO" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>3</platform>
+      </toolsSet>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>stty -F /dev/com4 1200 &amp; sleep 3 &amp; avrdude -CC:\arduino\hardware/tools/avr/etc/avrdude.conf -v -v -v -v -patmega32u4 -cavr109 -PCOM5 -b57600 -D -Uflash:w:${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/A_FLASHER.HEX:i</runcommandpicklistitem>
+          <runcommandpicklistitem>stty -F /dev/com4 1200 &amp; sleep 3 ; avrdude -CC:\arduino\hardware/tools/avr/etc/avrdude.conf -v -v -v -v -patmega32u4 -cavr109 -PCOM5 -b57600 -D -Uflash:w:${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/A_FLASHER.HEX:i</runcommandpicklistitem>
+          <runcommandpicklistitem>".\nbproject\PROGRAMME.cmd COM4</runcommandpicklistitem>
+          <runcommandpicklistitem>PROGRAMME.cmd COM4</runcommandpicklistitem>
+          <runcommandpicklistitem>PROGRAMME.cmd COM4 COM5</runcommandpicklistitem>
+          <runcommandpicklistitem>stty -F /dev/com4 1200 ; sleep 3 ; avrdude -CC:\arduino\hardware/tools/avr/etc/avrdude.conf -v -v -v -v -patmega32u4 -cavr109 -PCOM5 -b57600 -D -Uflash:w:${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/A_FLASHER.HEX:i</runcommandpicklistitem>
+          <runcommandpicklistitem>PROGRAMME.cmd COM4 COM5 flash:w:${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/A_FLASHER.HEX:i</runcommandpicklistitem>
+          <runcommandpicklistitem>PROGRAMME.cmd COM4 COM5 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/A_FLASHER.HEX</runcommandpicklistitem>
+          <runcommandpicklistitem>PROGRAMME.cmd COM4 COM3 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/A_FLASHER.HEX</runcommandpicklistitem>
+          <runcommandpicklistitem>PROGRAMME.cmd COM5 COM4 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/A_FLASHER.HEX</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>PROGRAMME.cmd COM5 COM4 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/A_FLASHER.HEX</runcommand>
+        <rundir></rundir>
+        <buildfirst>true</buildfirst>
+        <console-type>1</console-type>
+        <terminal-type>1</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

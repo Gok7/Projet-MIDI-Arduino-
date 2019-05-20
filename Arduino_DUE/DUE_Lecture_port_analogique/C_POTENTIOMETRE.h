@@ -1,0 +1,32 @@
+/* 
+ * File:   C_POTENTIOMETRE.h
+ * Author: flopyy
+ *
+ * Created on 15 janvier 2014, 15:13
+ */
+
+#ifndef C_POTENTIOMETRE_H
+#define	C_POTENTIOMETRE_H
+#include "C_PORTS_ANALOGIQUE.h"
+#include "Streaming.h"
+
+#define NOMBRE_DE_POT 4 
+
+class C_POTENTIOMETRE  {
+public:
+    C_POTENTIOMETRE(int P_Pin,int P_resolution=12,float P_Tension_Fourni=3.3);
+    float Get_Voltage();
+    float Get_Pourcentage();
+    int Get_Valeur_Brut();
+    
+protected:
+    int Resolution;
+    int Pin_Pot;
+    int Valeur_Pot;
+    float Tension_Fourni;
+    float Coef_Pourcentage;
+    float Coef_Voltage;
+};
+
+#endif	/* C_POTENTIOMETRE_H */
+

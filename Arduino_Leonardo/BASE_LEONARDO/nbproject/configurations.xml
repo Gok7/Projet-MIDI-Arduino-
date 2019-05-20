@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="90">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f1" displayName="CORE-ARDUINO" projectFiles="true">
+      <itemPath>Arduino/avr/cores/arduino/Arduino.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/CDC.cpp</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/Client.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/HID.cpp</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/HardwareSerial.cpp</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/HardwareSerial.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/IPAddress.cpp</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/IPAddress.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/Platform.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/Print.cpp</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/Print.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/Printable.h</itemPath>
+      <itemPath>Arduino/libraries/SD/src/SD.cpp</itemPath>
+      <itemPath>Arduino/libraries/SD/src/SD.h</itemPath>
+      <itemPath>Arduino/avr/libraries/SPI/SPI.cpp</itemPath>
+      <itemPath>Arduino/libraries/SD/src/utility/Sd2Card.cpp</itemPath>
+      <itemPath>Arduino/libraries/SD/src/utility/Sd2Card.h</itemPath>
+      <itemPath>Arduino/libraries/SD/src/utility/Sd2PinMap.h</itemPath>
+      <itemPath>Arduino/libraries/SD/src/utility/SdFile.cpp</itemPath>
+      <itemPath>Arduino/libraries/SD/src/utility/SdVolume.cpp</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/Server.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/Stream.cpp</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/Stream.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/Tone.cpp</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/USBAPI.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/USBCore.cpp</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/USBCore.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/USBDesc.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/Udp.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/WCharacter.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/WInterrupts.c</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/WMath.cpp</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/WString.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/binary.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/hooks.c</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/avr-libc/malloc.c</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/new.cpp</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/new.h</itemPath>
+      <itemPath>Arduino/avr/variants/yun/pins_arduino.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/avr-libc/realloc.c</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/wiring.c</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/wiring_analog.c</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/wiring_digital.c</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/wiring_private.h</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/wiring_pulse.c</itemPath>
+      <itemPath>Arduino/avr/cores/arduino/wiring_shift.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="f2" displayName="LIB-ARDUINO" projectFiles="true">
+      <itemPath>Arduino/libraries/TFT/src/utility/Adafruit_GFX.cpp</itemPath>
+      <itemPath>Arduino/libraries/TFT/src/utility/Adafruit_GFX.h</itemPath>
+      <itemPath>Arduino/libraries/TFT/src/utility/Adafruit_ST7735.cpp</itemPath>
+      <itemPath>Arduino/libraries/TFT/src/utility/Adafruit_ST7735.h</itemPath>
+      <itemPath>Arduino/libraries/TFT/src/TFT.cpp</itemPath>
+      <itemPath>Arduino/libraries/TFT/src/TFT.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="Annule" projectFiles="true">
+        <itemPath>C_AFFICHEUR.cpp</itemPath>
+        <itemPath>C_AFFICHEUR.h</itemPath>
+        <itemPath>C_EEPROM.cpp</itemPath>
+        <itemPath>C_EEPROM.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="MIDI" projectFiles="true">
+        <logicalFolder name="f1" displayName="EEPROM" projectFiles="true">
+          <itemPath>EEPROM.cpp</itemPath>
+          <itemPath>EEPROM.h</itemPath>
+          <itemPath>EEPROMAnything.h</itemPath>
+        </logicalFolder>
+        <itemPath>C_BARRE.cpp</itemPath>
+        <itemPath>C_BARRE.h</itemPath>
+        <itemPath>C_COMMANDE_MIDI.cpp</itemPath>
+        <itemPath>C_COMMANDE_MIDI.h</itemPath>
+        <itemPath>C_CONTROLE.cpp</itemPath>
+        <itemPath>C_CONTROLE.h</itemPath>
+        <itemPath>C_LISTE_COMMANDES.cpp</itemPath>
+        <itemPath>C_LISTE_COMMANDES.h</itemPath>
+        <itemPath>C_POTENTIOMETRE.cpp</itemPath>
+        <itemPath>C_POTENTIOMETRE.h</itemPath>
+        <itemPath>C_SERIE.cpp</itemPath>
+        <itemPath>C_SERIE.h</itemPath>
+        <itemPath>LiquidCrystal.cpp</itemPath>
+        <itemPath>LiquidCrystal.h</itemPath>
+        <itemPath>Main.cpp</itemPath>
+        <itemPath>T_MESSAGE.cpp</itemPath>
+        <itemPath>T_MESSAGE.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>Arduino/avr/cores/arduino</Elem>
+    <Elem>Arduino/avr/variants/leonardo</Elem>
+    <Elem>Arduino/avr/libraries/SPI</Elem>
+    <Elem>Arduino/avr/libraries/Wire</Elem>
+    <Elem>Arduino/libraries/TFT/src</Elem>
+    <Elem>Arduino/libraries/SD/src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>Arduino|WinAVR</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>C:/Arduino/hardware/tools/avr/avr/include</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/cores/arduino</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/variants/yun</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/cores/arduino/avr-libc</pElem>
+          </incDir>
+        </cTool>
+      </compileType>
+      <item path="Arduino/avr/cores/arduino/Arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/CDC.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/HID.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/HardwareSerial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/HardwareSerial.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/IPAddress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/IPAddress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Platform.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Print.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Print.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Printable.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Stream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Stream.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Tone.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/USBAPI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/USBCore.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/USBCore.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/USBDesc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Udp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/WCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/WInterrupts.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/WMath.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/WString.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/avr-libc/malloc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/avr-libc/realloc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/binary.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/hooks.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/new.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/new.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_analog.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_digital.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_private.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_pulse.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_shift.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/libraries/SPI/SPI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/variants/yun/pins_arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/SD.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/SD.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/Sd2Card.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/Sd2Card.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/Sd2PinMap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/SdFile.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/SdVolume.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/TFT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/TFT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/utility/Adafruit_GFX.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/utility/Adafruit_GFX.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/utility/Adafruit_ST7735.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/utility/Adafruit_ST7735.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C_AFFICHEUR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_AFFICHEUR.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_BARRE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_BARRE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_COMMANDE_MIDI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_COMMANDE_MIDI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_CONTROLE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_CONTROLE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_EEPROM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_EEPROM.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_LISTE_COMMANDES.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_LISTE_COMMANDES.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_POTENTIOMETRE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_POTENTIOMETRE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_SERIE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_SERIE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EEPROM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EEPROM.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EEPROMAnything.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LiquidCrystal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="LiquidCrystal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="T_MESSAGE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="T_MESSAGE.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>Arduino|WinAVR</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>C:/Arduino/hardware/tools/avr/avr/include</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/cores/arduino</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/variants/yun</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/cores/arduino/avr-libc</pElem>
+          </incDir>
+          <commandLine>-w -ffunction-sections -fdata-sections -MMD -mmcu=atmega32u4</commandLine>
+          <preprocessorList>
+            <Elem>ARDUINO=155</Elem>
+            <Elem>ARDUINO_ARCH_AVR</Elem>
+            <Elem>ARDUINO_AVR_YUN</Elem>
+            <Elem>F_CPU=16000000L</Elem>
+            <Elem>USB_MANUFACTURER=</Elem>
+            <Elem>USB_PID=0x8041</Elem>
+            <Elem>USB_PRODUCT="Arduino Yun"</Elem>
+            <Elem>USB_VID=0x2341</Elem>
+          </preprocessorList>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>C:/Arduino/hardware/tools/avr/avr/include</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/cores/arduino</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/variants/yun</pElem>
+            <pElem>C:/Arduino/hardware/arduino/avr/cores/arduino/avr-libc</pElem>
+          </incDir>
+          <commandLine>-w -fno-exceptions -ffunction-sections -fdata-sections -MMD -mmcu=atmega32u4</commandLine>
+          <preprocessorList>
+            <Elem>ARDUINO=155</Elem>
+            <Elem>ARDUINO_ARCH_AVR</Elem>
+            <Elem>ARDUINO_AVR_YUN</Elem>
+            <Elem>F_CPU=16000000L</Elem>
+            <Elem>USB_MANUFACTURER=</Elem>
+            <Elem>USB_PID=0x8041</Elem>
+            <Elem>USB_PRODUCT="Arduino Yun"</Elem>
+            <Elem>USB_VID=0x2341</Elem>
+          </preprocessorList>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <commandLine>-Os -Wl,--gc-sections -mmcu=atmega32u4 -L ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/FINAL.tmp -lm</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="Arduino/avr/cores/arduino/Arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/CDC.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/HID.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/HardwareSerial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/HardwareSerial.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/IPAddress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/IPAddress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Platform.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Print.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Print.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Printable.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Stream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Stream.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Tone.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/USBAPI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/USBCore.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/USBCore.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/USBDesc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Udp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/WCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/WInterrupts.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/WMath.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/WString.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/avr-libc/malloc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/avr-libc/realloc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/binary.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/hooks.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/new.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/new.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_analog.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_digital.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_private.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_pulse.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_shift.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/libraries/SPI/SPI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/variants/yun/pins_arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/SD.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/SD.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/Sd2Card.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/Sd2Card.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/Sd2PinMap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/SdFile.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/SdVolume.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/TFT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/TFT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/utility/Adafruit_GFX.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/utility/Adafruit_GFX.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/utility/Adafruit_ST7735.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/utility/Adafruit_ST7735.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C_AFFICHEUR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_AFFICHEUR.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_BARRE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_BARRE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_COMMANDE_MIDI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_COMMANDE_MIDI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_CONTROLE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_CONTROLE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_EEPROM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_EEPROM.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_LISTE_COMMANDES.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_LISTE_COMMANDES.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_POTENTIOMETRE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_POTENTIOMETRE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_SERIE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_SERIE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EEPROM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EEPROM.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EEPROMAnything.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LiquidCrystal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="LiquidCrystal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="T_MESSAGE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="T_MESSAGE.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="ARDUINO-LEONARDO" type="1">
+      <toolsSet>
+        <compilerSet>Arduino|WinAVR</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>0</developmentMode>
+          <incDir>
+            <pElem>Arduino/avr/cores/arduino</pElem>
+            <pElem>Arduino/avr/variants/yun</pElem>
+            <pElem>Arduino/avr/cores/arduino/avr-libc</pElem>
+            <pElem>Arduino/avr/libraries/SPI</pElem>
+            <pElem>Arduino/libraries/TFT/src</pElem>
+            <pElem>Arduino/libraries/SD/src</pElem>
+          </incDir>
+          <commandLine>-ffunction-sections -fdata-sections -MMD -mmcu=atmega32u4 -Os</commandLine>
+          <preprocessorList>
+            <Elem>ARDUINO=155</Elem>
+            <Elem>ARDUINO_ARCH_AVR</Elem>
+            <Elem>ARDUINO_AVR_LEONARDO</Elem>
+            <Elem>F_CPU=16000000L</Elem>
+            <Elem>USB_PID=0x8036</Elem>
+            <Elem>USB_PRODUCT="Arduino Leonardo"</Elem>
+            <Elem>USB_VID=0x2341</Elem>
+          </preprocessorList>
+        </cTool>
+        <ccTool>
+          <developmentMode>0</developmentMode>
+          <incDir>
+            <pElem>Arduino/avr/cores/arduino</pElem>
+            <pElem>Arduino/avr/variants/yun</pElem>
+            <pElem>Arduino/avr/cores/arduino/avr-libc</pElem>
+            <pElem>Arduino/avr/libraries/SPI</pElem>
+            <pElem>Arduino/libraries/TFT/src</pElem>
+            <pElem>Arduino/libraries/SD/src</pElem>
+          </incDir>
+          <commandLine>-fno-exceptions -ffunction-sections -fdata-sections -MMD -mmcu=atmega32u4 -Os</commandLine>
+          <preprocessorList>
+            <Elem>ARDUINO=155</Elem>
+            <Elem>ARDUINO_ARCH_AVR</Elem>
+            <Elem>ARDUINO_AVR_LEONARDO</Elem>
+            <Elem>F_CPU=16000000L</Elem>
+            <Elem>USB_PID=0x8036</Elem>
+            <Elem>USB_PRODUCT="Arduino Leonardo"</Elem>
+            <Elem>USB_VID=0x2341</Elem>
+          </preprocessorList>
+        </ccTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/FINAL.ELF</output>
+          <commandLine>-Os -Wl,--gc-sections -mmcu=atmega32u4 -L ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/FINAL.tmp -lm</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="Arduino/avr/cores/arduino/Arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/CDC.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Client.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/HID.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/HardwareSerial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/HardwareSerial.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/IPAddress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/IPAddress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Platform.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Print.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Print.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Printable.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Server.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Stream.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Stream.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Tone.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/USBAPI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/USBCore.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/USBCore.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/USBDesc.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/Udp.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/WCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/WInterrupts.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/WMath.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/WString.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/avr-libc/malloc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/avr-libc/realloc.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/binary.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/hooks.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/new.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/new.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_analog.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_digital.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_private.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_pulse.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/cores/arduino/wiring_shift.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="Arduino/avr/libraries/SPI/SPI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/avr/variants/yun/pins_arduino.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/SD.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/SD.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/Sd2Card.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/Sd2Card.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/Sd2PinMap.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/SdFile.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/SD/src/utility/SdVolume.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/TFT.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/TFT.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/utility/Adafruit_GFX.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/utility/Adafruit_GFX.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/utility/Adafruit_ST7735.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Arduino/libraries/TFT/src/utility/Adafruit_ST7735.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C_AFFICHEUR.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_AFFICHEUR.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_BARRE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_BARRE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_COMMANDE_MIDI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_COMMANDE_MIDI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_CONTROLE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_CONTROLE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_EEPROM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_EEPROM.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_LISTE_COMMANDES.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_LISTE_COMMANDES.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_POTENTIOMETRE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_POTENTIOMETRE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="C_SERIE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="C_SERIE.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EEPROM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="EEPROM.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="EEPROMAnything.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LiquidCrystal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="LiquidCrystal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="T_MESSAGE.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="T_MESSAGE.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
