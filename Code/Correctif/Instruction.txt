@@ -1,0 +1,1 @@
+remplacer le fichier wiring_analog.c du projet par celui dans correctif

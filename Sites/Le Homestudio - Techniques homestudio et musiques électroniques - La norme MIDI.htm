@@ -1,0 +1,861 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><!-- #BeginTemplate "/Templates/Le Homestudio.dwt" --><head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15">
+<meta http-equiv="Content-Language" content="fr-FR">
+<meta name="keywords" content="homestudio, français, enregistrement, musique électronique, synthèse, synthèse analogique, synthétiseur analogique, synthétiseur, synthétiseurs, midi, technique d'enregistrement, mixage, compression, egalisation, égalisation">
+<meta name="description" content="Site dédié aux techniques d'enregistrement homestudio, aux musiques électroniques et à la synthèse sonore.">
+<!-- #BeginEditable "doctitle" --> 
+<title>Le Homestudio - Techniques homestudio et musiques électroniques 
+- La norme MIDI</title>
+<!-- #EndEditable --> 
+<style type="text/css">
+	body {
+		background : #faf8fc;
+		color: black;
+		font-family: Verdana,Lucida,sans-serif,Helvetica;
+		font-size: 90%;
+	}
+	tr, td { font-size: 90%; }
+	td.text { background: #ffffff; }
+ 	a {	color : #444499; }
+	a:hover { text-decoration: none; color: #000000; background: #ffaa88; }
+	.titleBarTop   { background : #5555aa; }
+	.tableBody1    { background : #ffffff; }
+	.tableBody2    { background : #fffaf8; }
+	.tableOutline1 { background : #7777cc; }
+	.tableOutline2 { background : #aa99ff; }
+	.tableHead1 {
+		background: #5555aa;
+		color: #ffffff;
+		font-weight : bold;
+		font-size: 100%;
+		letter-spacing: 1.5pt;
+	}
+	.tableHead2 {
+		background: #8888dd;
+		color: #ffffff;
+		font-weight: bold;
+		letter-spacing: 1pt;
+		text-indent: 1em;
+	}
+	td.footerOutline { background: #a0b8c8;	}
+	tr.footerBody    { background: #ffffff;	}
+	.title {
+		font-size: 210%;
+		color: #ffffff;
+		font-weight: bold;
+	}
+	.heading { font-size: 130%;	font-weight: bold; }
+	.widget { color: #ffaa88; font-weight: bolder; font-size: 120%; }
+    .edito { font-size: 110%; font-family: Times,serif; font-style: italic; }
+
+TABLE.OpcodeDesc {
+	border-style: solid;
+	border-width: 3px;
+	border-color: silver; 
+	margin: 0px;
+}
+TD.opcode {
+  background-color: #3333AA;
+  font-family: Lucida, "Lucida Console", monospace;
+  font-size: 10pt;
+  font-weight: 900;
+  color: #FFAAAA;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+TD.data {
+  background-color: #3333AA;
+  font-family: Lucida, "Lucida Console", monospace;
+  font-size: 10pt;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+TD.desc {
+  background-color: #EEEEFF;
+  font-family: Verdana, helvetica;
+  font-size: 10pt;
+  font-weight: 400;
+  color: black;
+  text-align: justify;
+  padding: 5px;
+}
+TD.name {
+  background-color: #EEEEFF;
+  font-family: Verdana, helvetica;
+  font-size: 10pt;
+  font-weight: 600;
+  color: #3333AA;
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+<div align="center"> 
+  <table border="0" cellpadding="1" cellspacing="0" width="80%">
+    <tbody><tr> 
+      <td class="tableOutline1"> 
+        <table border="0" cellpadding="4" cellspacing="0" width="100%">
+          <tbody><tr class="titleBarTop" valign="middle"> 
+            <td> <span class="title"><font color="#fbf8f6">[</font> Le 
+              homestudio <font color="#fbf8f6">]</font></span> 
+            </td>
+            <td align="right"> 
+              <table border="0" cellpadding="3" cellspacing="1">
+                <tbody><tr class="tableBody1"> 
+                  <td align="center"> <a href="http://www.lehomestudio.org/">Accueil</a>&nbsp;</td>
+                  <td align="center"> <a href="http://www.lehomestudio.org/sitemap.html">Plan du site</a>&nbsp;</td>
+                  <td align="center"> <a href="http://www.lehomestudio.org/apropos.html">À propos</a>&nbsp;</td>
+                  <td align="center"> <a href="mailto:homestudio@alexandredenis.net">Contact</a>&nbsp;</td>
+                </tr>
+              </tbody></table>
+            </td>
+          </tr>
+        </tbody></table>
+        <table border="0" cellpadding="2" cellspacing="0" width="100%">
+          <tbody><tr class="tableBody1" valign="middle"> 
+            <td> <span class="heading"><span class="widget"><b>:.</b></span> techniques 
+              homestudio et musiques électroniques
+              </span></td>
+            <td align="right"> <b>Par Alex D.</b> </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </tbody></table>
+  <table border="0" cellpadding="4" cellspacing="0" width="80%">
+    <tbody><tr> 
+      <td> <a href="http://www.lehomestudio.org/">Accueil</a>&nbsp;&gt; <!-- #BeginEditable "Navigation" -->La norme MIDI<!-- #EndEditable --></td>
+    </tr>
+  </tbody></table>
+  <p> 
+  <table border="0" cellpadding="3" cellspacing="0" width="80%">
+    <tbody><tr> 
+      <td valign="top" width="30%"> 
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tbody><tr> 
+            <td class="tableOutline1"> 
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr class="tableBody1"> 
+                  <td> 
+                    <table border="0" cellpadding="3" cellspacing="0" width="100%">
+                      <tbody><tr> 
+                        <td class="tableHead1" valign="top"><span class="widget">:.</span></td>
+                        <td class="tableHead1" valign="top">Dossiers</td>
+                      </tr>
+                      <tr> 
+                        <td class="tableHead1" valign="top"><b>»</b></td>
+                        <td> <a href="http://www.lehomestudio.org/synthese.html"><b>La synthèse</b></a> 
+                        </td>
+                      </tr>
+                      <tr> 
+                        <td class="tableHead1">&nbsp;</td>
+                        <td> <!-- #BeginEditable "Sommaire:%20Synthese" -->
+                          <p>Guide des synthétiseurs&nbsp;- analogique, 
+                            FM, modélisation physique, etc.</p>
+                          <!-- #EndEditable --></td>
+                      </tr>
+                      <tr> 
+                        <td class="tableHead1" valign="top"><b>»</b></td>
+                        <td> <a href="http://www.lehomestudio.org/mixage"><b>Le mixage</b></a> </td>
+                      </tr>
+                      <tr> 
+                        <td class="tableHead1">&nbsp;</td>
+                        <td> <!-- #BeginEditable "Sommaire:%20Mixage" -->
+                          <p>Les techniques de mixage, l'égalisation, la 
+                            compression dynamique</p>
+                          <!-- #EndEditable --></td>
+                      </tr>
+                      <tr> 
+                        <td class="tableHead1" valign="top"><b>»</b></td>
+                        <td> <a href="http://www.lehomestudio.org/midi.html"><b>Le Midi</b></a> </td>
+                      </tr>
+                      <tr> 
+                        <td class="tableHead1">&nbsp;</td>
+                        <td> <!-- #BeginEditable "Sommaire:%20Midi" --> 
+                          <table border="0" cellpadding="1" cellspacing="0" width="100%">
+                            <tbody><tr> 
+                              <td class="tableOutline1"> 
+                                <table border="0" cellpadding="3" cellspacing="0" width="100%">
+                                  <tbody><tr> 
+                                    <td class="tableHead2">La norme MIDI</td>
+                                  </tr>
+                                  <tr class="tableBody2"> 
+                                    <td> 
+                                      <p><b>»&nbsp;<a href="#elec">Spécifications 
+                                        électriques </a><br>
+                                        </b><b>»&nbsp;<a href="#protocol">Protocole</a><br>
+                                        </b><b>»&nbsp;<a href="#general">Messages 
+                                        généraux</a><br>
+                                        </b><b>»&nbsp;<a href="#modes">Modes 
+                                        MIDI</a><br>
+                                        </b><b>»&nbsp;<a href="#system">Messages 
+                                        systèmes</a><br>
+                                        </b><b>»&nbsp;<a href="#realtime">Messages 
+                                        temp-réel</a></b></p>
+                                    </td>
+                                  </tr>
+                                </tbody></table>
+                              </td>
+                            </tr>
+                          </tbody></table>
+                          <!-- #EndEditable --></td>
+                      </tr>
+                      <tr> 
+                        <td class="tableHead1" valign="top"><b>»</b></td>
+                        <td><a href="http://www.lehomestudio.org/jargonnoscope.html"><b>Lexique</b></a></td>
+                      </tr>
+                      <tr> 
+                        <td class="tableHead1">&nbsp;</td>
+                        <td> <!-- #BeginEditable "Sommaire:%20Lexique" -->Pour 
+                          décrypter le jargon des spécialistes<!-- #EndEditable --> </td>
+                      </tr>
+                      <tr> 
+                        <td class="tableHead1" valign="top"><span class="widget">:.</span></td>
+                        <td class="tableHead1" valign="top">Humeurs&nbsp; </td>
+                      </tr>
+                      <tr> 
+                        <td class="tableHead1" valign="top"><b>»</b></td>
+                        <td> <a href="http://www.lehomestudio.org/techno.html"><b>Préjugés 
+                          sur les musiques électroniques</b></a></td>
+                      </tr>
+                      <tr> 
+                        <td class="tableHead1">&nbsp;</td>
+                        <td> Les préjugés ont la vie dure !</td>
+                      </tr>
+                      <tr> 
+                        <td class="tableHead1" valign="top"><b>»</b></td>
+                        <td> <a href="http://www.lehomestudio.org/discs.html"><b>Guide des musiques électroniques</b></a></td>
+                      </tr>
+                      <tr> 
+                        <td class="tableHead1">&nbsp;</td>
+                        <td> Sélection de disques, guides des artistes.</td>
+                      </tr>
+                    </tbody></table>
+                  </td>
+                </tr>
+              </tbody></table>
+            </td>
+          </tr>
+        </tbody></table>
+        <p> 
+        <!-- #BeginEditable "Left%20Pane" --> 
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tbody><tr> 
+            <td class="tableOutline1"> 
+              <table border="0" cellpadding="3" cellspacing="0" width="100%">
+                <tbody><tr> 
+                  <td class="tableHead2">En bref</td>
+                </tr>
+                <tr class="tableBody2"> 
+                  <td> 
+                    <p>C'est le langage qu'utilisent les synthétiseurs 
+                      pour dialoguer entre eux. C'est également le MIDI 
+                      qui permet à un ordinateur de piloter un synthétiseur.</p>
+                  </td>
+                </tr>
+              </tbody></table>
+            </td>
+          </tr>
+        </tbody></table>
+        <!-- #EndEditable --> </p></td>
+      <td width="3">&nbsp;</td>
+      <td colspan="2" valign="top"><!-- #BeginEditable "RightPane" --> 
+        <table border="0" cellpadding="3" cellspacing="0" width="100%">
+          <tbody><tr> 
+            <td class="tableHead1"><span class="widget">»&nbsp;</span>La 
+                norme MIDI</td>
+          </tr>
+          <tr><td class="text">
+              <p align="justify">La norme MIDI était à l'origine destinée à relier 
+                les synthétiseurs entre eux. Typiquement, un clavier maître servait 
+                à piloter plusieurs générateurs sonores. C'est plus tard que l'on 
+                a eu l'idée d'y connecter aussi les ordinateurs. Ceci explique 
+                l'orientation "temp réel" du format des données, peu adapté à 
+                l'enregistrement. </p>
+              <p align="justify"> La norme MIDI 1.0 a été publiée par par l'IMA 
+                (International MIDI Association) en 1983. Il y a eu des évolutions 
+                depuis lors, mais l'essentiel reste identique. Les évolutions 
+                sont réalisée par le consortium <a href="http://www.midi.org/">MIDI 
+                Manufacturer Association</a>. </p>
+              <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                <tbody><tr> 
+                  <td class="tableHead2"><a name="elec">&nbsp;</a>Spécifications électriques</td>
+                </tr>
+              </tbody></table>
+              <p align="justify">Le connecteur MIDI est un connecteur DIN à 5 broches 
+                standard. Quelques rares fabriquants proposent plutôt des connecteurs 
+                XLR pour leur plus grande robustesse, mais ils sont peu répandus 
+                car onéreux et ne respectant pas la norme. On utilise une prise 
+                distincte pour l'entrée et pour la sortie, pour autoriser toutes 
+                sortes de câblages. Il n'y a pas de détrompeur : il est possible 
+                de relier par mégarde deux sorties ; il n'y a normalement pas 
+                de dégats car les sorties sont assez robustes -- à éviter quand 
+                même ! On appelle "MIDI in" l'entrée vers l'instrument, "MIDI 
+                out" la sortie. Certains instruments sont équipés d'une prise 
+                "MIDI thru". Elle renvoit sans modification ce qui arrive par 
+                la prise "MIDI in", permettant ainsi le chainage. Le câble utilisé 
+                est de type paire torsadée entre les broches 4 et 5. La broche 
+                2 est reliée à la masse. les broches 1 et 3 ne sont pas utilisées. 
+              </p>
+              <p align="justify"> Les données circulent à une vitesse de 31.25 Kbaud 
+                (+/-1%), 8 bits de données, 1 bit de départ, 1 bit d'arrêt, soit 
+                320 microsecondes par octet. Pour obtenir une bonne isolation 
+                électrique, l'interface MIDI repose sur une boucle de courant 
+                ; la commande se fait en intensité et pas en tension. La boucle 
+                de courant est fixée à 5 mA, le 0 logique étant la présence de 
+                courant. Du côté récepteur, il est nécessaire d'utiliser un opto-coupleur 
+                qui bascule en moins de 2 microsecondes (Sharp PC-900 ou HP6N138 
+                par exemple). </p>
+              <p align="justify"> Grâce à l'utilisation d'une boucle de courant 
+                et d'un opto-coupleur, il y a une isolation électrique totale 
+                entre l'émetteur et le récepteur. On ne connecte la masse (broche 
+                2 et blindage) que du côté de l'émetteur et jamais du côté du 
+                récepteur. N'oublions pas, en effet, qu'il est conseillé de ne 
+                jamais relier ensemble les masses de deux appareils audios autrement 
+                que par le câble audio lui-même. Une interface MIDI ne doit pas 
+                connecter la masse sur une prise "MIDI in" ; cependant, 
+                il est tellement fréquent de trouver des interfaces qui 
+                ne respectent pas la norme (surtout les adaptateurs joystick vers 
+                les ordinateurs) que certains câbles réalisent eux-même 
+                cette connexion d'un seul côté. Attention, dans ce 
+                cas le câble MIDI a un sens !</p>
+              <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                <tbody><tr> 
+                  <td class="tableHead2"><a name="protocol">&nbsp;</a>Protocole MIDI</td>
+                </tr>
+              </tbody></table>
+              <p align="justify">Les données sont transmises sous formes d'octets. 
+                On distingue deux types d'octets : les octets "opcode" que l'on 
+                appelle aussi "status" ont le bit 7 fixé à un, et les octets de 
+                données avec le bit 7 mis à zéro. Les octets status sont suivis 
+                des données correspondantes. Il y a une notion "d'état courant" 
+                : si on envoie des données sans répeter l'octet status, on considère 
+                simplement que le même octet status est sous-entendu.</p>
+              <p align="justify"> Le protocole prévoit un échange d'informations 
+                sur 16 canaux différents, un canal étant souvent associé à la 
+                notion de piste. Les paramètres tels que volume, modulation, panoramique, 
+                changement de programme, etc. s'appliquent séparément à chaque 
+                canal. Un instrument reçoit selon le mode MIDI un seul ou plusieurs 
+                canaux. </p>
+         <table border="0" cellpadding="2" cellspacing="0" width="100%">
+          <tbody><tr> 
+            <td class="tableHead2"><a name="general">&nbsp;</a>Messages généraux</td>
+          </tr>
+        </tbody></table>
+		      <p align="justify">Dans ce document, les valeurs hexadécimales sont 
+                préfixées par 0x (comme en C), les bits numérotés de 0 à 7, 0 
+                étant le bit de poids faible. Les octets status ont un format 
+                fixe. </p>
+              <ul>
+                <li>bit 7 : fixé à un (identifiant "status")</li>
+                <li>bits 6-4 : code du message sur 3 bits (8 valeurs) 
+                  <ul>
+                    <li> 0 : fin de note</li>
+                    <li> 1 : début de note</li>
+                    <li> 2 : pression dynamique (par note)</li>
+                    <li> 3 : paramètre </li>
+                    <li> 4 : sélection de programme</li>
+                    <li> 5 : pression dynamique (par canal)</li>
+                    <li> 6 : pitch bend</li>
+                    <li> 7 : message système</li>
+                  </ul>
+                </li><li>bits 3-0 : numéro du canal</li>
+              </ul>
+              <p align="justify"> Passons en revue la signification des différents 
+                codes, ainsi que les octets de données associés. Si on considère 
+                l'octet complet en écriture hexadécimale, les codes sont en fait 
+                des intervalles puisqu'il existe un code pour chaque canal. Puisque 
+                le bit 7 est toujours fixé à 1, les codes démarrent à 0x80. <br>
+                Par exemple, le code 0x89 correspond à : fin de note sur le canal 
+                9. </p>
+              <b> 0x80 à 0x8F : fin de note (note off) </b>
+              <table class="OpcodeDesc" cellspacing="5">
+                <tbody><tr><td class="opcode">0x80</td>
+                <td class="data">note</td>
+                <td class="data">vélocité</td>
+              </tr></tbody></table>
+              <ul>
+                <li> un octet de numéro de note </li>
+                <li> un octet de vélocité </li>
+              </ul>
+              <p align="justify"> La vélocité de relâchement a très rarement une signification. 
+              </p>
+              <b>0x90 à 0x9F : début de note (note on)</b>
+              <table class="OpcodeDesc" cellspacing="5">
+                <tbody><tr> 
+                  <td class="opcode">0x90</td>
+                  <td class="data">note</td>
+                  <td class="data">vélocité</td>
+                </tr>
+              </tbody></table>
+              <ul>
+                <li> un octet de numéro de note </li>
+                <li> un octet de vélocité </li>
+              </ul>
+              <p align="justify"> C'est sans doute le message le plus courant. Il 
+                faut noter que si la vélocité vaut 0, ce message est équivalent 
+                à la fin d'une note. Grâce à ce mécanisme de subsitution des "note 
+                on" avec vélocité 0 par "note off", une succession de notes est 
+                traduite à l'aide uniquement d'évènements "note on"&nbsp;; on 
+                peut donc omettre l'octet de status. C'est une pratique largement 
+                répandue, utilisée en standard par de nombreux synthétiseurs. 
+              </p>
+              <p align="justify"> La vélocité est censée utiliser une échelle logarithmique, 
+                les claviers ne la gérant pas envoient normalement 64. On constate 
+                cependant que les échelles de vélocité varient beaucoup d'un clavier 
+                à l'autre, et que les claviers qui ne sont pas sensibles à la 
+                dynamique ont tendance à plutôt envoyer 100 au lieu de la valeur 
+                64 préconisée par la norme. </p>
+              <p align="justify"> Le "do" médian (celui au milieu du clavier) a pour 
+                numéro 60. Le "la" de référence à 440&nbsp;Hz a donc pour numéro 
+                69. </p>
+              <b>0xA0 à 0xAF : pression dynamique (after touch)</b>
+              <table class="OpcodeDesc" cellspacing="5">
+                <tbody><tr> 
+                  <td class="opcode">0xA0</td>
+                  <td class="data">note</td>
+                  <td class="data">pression</td>
+                </tr>
+              </tbody></table>
+              <ul>
+                <li> un octet de numéro de note </li>
+                <li> un octet de valeur de pression </li>
+              </ul>
+              <p align="justify"> Ces valeurs correspondent à la pression exercée 
+                sur le clavier <i> pendant</i> que la touche est enfoncée. </p>
+              <b>0xB0 à 0xBF : contrôleurs</b>
+              <table class="OpcodeDesc" cellspacing="5">
+                <tbody><tr> 
+                  <td class="opcode">0xB0</td>
+                  <td class="data">contrôleur</td>
+                  <td class="data">valeur</td>
+                </tr>
+              </tbody></table>
+              <ul>
+                <li> un octet de numéro de contrôleur </li>
+                <li> un octet de valeur </li>
+              </ul>
+              <p align="justify"> Les contrôleurs sont par exemple le volume, la réverbération, 
+                le panoramique... Leur numéro n'est pas fixé par la norme MIDI 
+                mais la plupart des constructeurs respectent les valeurs données 
+                par la norme General Midi. </p>
+              <dl> 
+                <dt>0-31 
+                </dt><dd>contrôleurs de 0 à 31, octet de poids fort 
+                </dd><dt>32-63 
+                </dt><dd>contrôleurs de 0 à 31, octet de poids faible 
+                </dd><dt>64-95 
+                </dt><dd>contrôleurs de type bascule (0 et 127 seules valeurs autorisées) 
+                </dd><dt>96-121 
+                </dt><dd>non spécifié 
+                </dd><dt>122-127 
+                </dt><dd>réservé, voir <a href="#modes"> "messages de mode"</a>. 
+              </dd></dl>
+              <p align="justify"> La norme impose uniquement le numéro 1 pour la molette 
+                de modulation. On constate cependant que l'usage du numéro 7 pour 
+                le volume, 11 pour la pédale d'expression, 13 pour le réglage 
+                de panoramique, 64 pour la pédale de sustain, 91 pour la réverbération 
+                et 93 pour le chorus est très largement répandu, même pour les 
+                instruments qui ne répondent pas à la norme General Midi. </p>
+              <p align="justify"> Les contôleurs de 32 à 63 servent théoriquement 
+                pour fixer les paramètres de façon fine, de façon à avoir deux 
+                octets significatifs. On constate que très peu d'instruments utilisent 
+                des paramètres sur 2 octets, et les valeurs sont en général dans 
+                l'intervalle 0-127. On remarque également qu'en pratique, les 
+                contrôleurs de la zone 64-95 sont utilisés sur la plage complète 
+                0-127 et ne sont pas forcément utilisés en bascule. </p>
+              <p align="justify"> Les contrôleurs 122-127 sont utilisés pour la gestion 
+                des modes MIDI. </p>
+              <b>0xC0 à 0xCF : sélection de programme</b>
+              <table class="OpcodeDesc" cellspacing="5">
+                <tbody><tr> 
+                  <td class="opcode">0xC0</td>
+                  <td class="data">programme</td>
+                </tr>
+              </tbody></table>
+              <ul>
+                <li> un octet de valeur </li>
+              </ul>
+              <p align="justify"> La sélection de programme permet de changer de timbre. 
+                La norme MIDI&nbsp;1.0 n'impose pas de liste d'instruments standard. 
+                C'est l'une des principales raisons de l'établissement de la norme 
+                General Midi. </p>
+              <b>0xD0 à 0xDF : pression par canal (channel aftertouch)</b>
+              <table class="OpcodeDesc" cellspacing="5">
+                <tbody><tr> 
+                  <td class="opcode">0xD0</td>
+                  <td class="data">pression</td>
+                </tr>
+              </tbody></table>
+              <ul>
+                <li> un octet de valeur </li>
+              </ul>
+              <p align="justify"> Identique à la pression dynamique mais gérée globalement 
+                sur un canal complet. </p>
+              <b>0xE0 à 0xEF : pitch bend</b>
+              <table class="OpcodeDesc" cellspacing="5">
+                <tbody><tr> 
+                  <td class="opcode">0xE0</td>
+                  <td class="data">poids faible</td>
+                  <td class="data">poids fort</td>
+                </tr>
+              </tbody></table>
+              <p align="justify"> Données sur 14 bits : </p>
+              <ul>
+                <li> 7 bits de poids faible </li>
+                <li> 7 bits de poids fort </li>
+              </ul>
+              <p align="justify"> Les valeurs vont donc de 0x00 à 0x3FFF, avec le 
+                point neutre en 0x2000. L'amplitude n'est pas spécifiée dans la 
+                norme, mais on constate qu'en général, elle est de 2 demis tons 
+                vers le haut et vers le bas. </p>
+				<a name="modes"><br></a>
+              <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                <tbody><tr> 
+                  <td class="tableHead2"><a name="modes">&nbsp;</a>Les modes MIDI</td>
+                </tr>
+              </tbody></table>
+              <p align="justify">Les messages de modes contrôlent la façon dont l'instrument 
+                reçoit les données. Le but de ces messages est de filtrer les 
+                notes selon les canaux pour permettre de réaliser une chaîne MIDI, 
+                chaque instrument ne prenant que ce qui le concerne. </p>
+              <p align="justify">&nbsp;</p>
+
+</td></tr></tbody></table>
+       <!-- #EndEditable --></td>
+    </tr>
+    <!-- #BeginEditable "Page%20pleine%20largeur" -->
+<tr>
+<td colspan="4">
+<table class="OpcodeDesc" cellspacing="5">
+<tbody><tr>
+  <td></td>
+  <td class="name">Octet Status</td>
+  <td class="name">Numéro du contrôleur</td>
+  <td class="name">Valeur du contrôleur</td>
+  <td></td>
+</tr>
+<tr>
+  <td class="name">Contrôle local</td>
+  <td class="opcode">0xBO</td>
+  <td class="data">122</td>
+  <td class="data">0=off, 127=on</td>
+  <td class="desc">off : les notes du claviers ne sont pas envoyées au générateur de son ; on : le clavier commande le générateur de son.</td>
+</tr>
+<tr>
+  <td class="name">Toutes notes off</td>
+  <td class="opcode">0xBO</td>
+  <td class="data">123</td>
+  <td class="data">0</td>
+  <td class="desc">Le générateur de son arrête toutes les notes en cours.</td>
+</tr>
+<tr>
+  <td class="name">omni off</td>
+  <td class="opcode">0xBO</td>
+  <td class="data">124</td>
+  <td class="data">0</td>
+  <td class="desc">Réception uniquement sur le canal Midi "de base".</td>
+</tr>
+<tr>
+  <td class="name">omni on</td>
+  <td class="opcode">0xBO</td>
+  <td class="data">125</td>
+  <td class="data">0</td>
+  <td class="desc">Réception sur tous les canaux Midi en simultané.</td>
+</tr>
+<tr>
+  <td class="name">mode mono</td>
+  <td class="opcode">0xBO</td>
+  <td class="data">126</td>
+  <td class="data">nombre de canaux</td>
+  <td class="desc">Instrument monophonique (une voix à la fois)</td>
+</tr>
+<tr>
+  <td class="name">mode poly</td>
+  <td class="opcode">0xBO</td>
+  <td class="data">127</td>
+  <td class="data">0</td>
+  <td class="desc">Instrument polyphonique (plusieurs voix simultanées).</td>
+</tr>
+</tbody></table>
+</td></tr>
+
+<tr>
+<td>
+<p align="justify"><i>
+Ces modes ne sont pas importants en pratique, car vraiment très peu utilisés.
+L'intention de départ pour contrôler la chaine Midi était louable, mais l'implémentation n'a pas suivi.
+</i>
+</p>
+</td><td>&nbsp;</td>
+<td colspan="2" class="text">
+<p align="justify">
+Les combinaisons des messages "omni" et "mono/poly" définissent les 
+modes MIDI.   Les messages de modes ne sont donnés qu'à titre indicatif,
+ un synthétiseur peut les ignorer. La façon de préciser les numéros de 
+canaux utilisés n'est pas claire. Chaque fabriquant a donc préféré 
+définir un choix des canaux reçus par un réglage directement sur 
+l'appareil. Par défaut, les instruments sont généralement en mode 1 : 
+omni on, poly.
+</p>
+<p align="justify">
+Le réglage du contrôle local est très largement utilisé, mais là encore,
+ il correspond souvent à un bouton en façade de l'appareil et non au 
+message Midi. Il sert pour éviter les notes doublées dans le cadre de 
+l'utilisation avec un séquenceur : souvent le séquenceur renvoit les 
+notes qu'il reçoit (echo) et devient une sorte de "patchbay" Midi. Du 
+point de vue du séquenceur, il y a un clavier de commande et un 
+générateur de sons&nbsp;; il faut donc retirer la connexion directe de 
+l'un à l'autre pour laisser le séquenceur router correctement les 
+messages Midi.
+</p><br>
+         <table border="0" cellpadding="2" cellspacing="0" width="100%">
+          <tbody><tr> 
+            <td class="tableHead2"><a name="system">&nbsp;</a>Les messages systèmes</td>
+          </tr>
+        </tbody></table>
+
+<p align="justify">
+Les octets de status de 0xF0 à 0xF7 ne correspondent à aucun canal. Ils
+sont réservés pour échanger des messages de type "système".
+</p>
+</td></tr>
+
+<tr>
+<td colspan="4">
+
+<table class="OpcodeDesc" cellspacing="5">
+<tbody><tr>
+  <td></td>
+  <td class="name">Octet Status</td>
+  <td class="name" colspan="2">Octets de données</td>
+  <td></td>
+</tr>
+<tr>
+  <td class="name">System exclusive</td>
+  <td class="opcode">0xF0</td>
+  <td class="data">Identifiant du constructeur</td>
+  <td class="data">Données de longeur variable</td>
+  <td class="desc">Message défini par le constructeur, entièrement 
+libre. Il est composé d'octets de données (donc dans 0-127, bit 7 à 0) 
+et terminé par l'octet 0xF7</td>
+</tr>
+<tr>
+  <td></td>
+  <td class="opcode">0xF1</td>
+  <td></td>
+  <td></td>
+  <td class="desc">Non défini</td>
+</tr>
+<tr>
+  <td class="name">Position</td>
+  <td class="opcode">0xF2</td>
+  <td class="data">octet de poids faible</td>
+  <td class="data">octet de poids fort</td>
+  <td class="desc">Pointeur de position dans la chanson, donné en nombre de temps.</td>
+</tr>
+<tr>
+  <td class="name">Sélection de chanson</td>
+  <td class="opcode">0xF3</td>
+  <td class="data">numéro de chanson</td>
+  <td></td>
+  <td class="desc">Message destiné aux séquenceurs capables de stocker plusieurs chansons.</td>
+</tr>
+<tr>
+  <td></td>
+  <td class="opcode">0xF4</td>
+  <td></td>
+  <td></td>
+  <td class="desc">Non défini</td>
+</tr>
+<tr>
+  <td></td>
+  <td class="opcode">0xF5</td>
+  <td></td>
+  <td></td>
+  <td class="desc">Non défini</td>
+</tr>
+<tr>
+  <td class="name">Accordage</td>
+  <td class="opcode">0xF6</td>
+  <td></td>
+  <td></td>
+  <td class="desc">Cette commande demande à un synthétiseur analogique de s'accorder automatiquement s'il dispose d'un accordeur automatique.</td>
+</tr>
+<tr>
+  <td class="name">EOX</td>
+  <td class="opcode">0xF7</td>
+  <td></td>
+  <td></td>
+  <td class="desc">Fin de "system exclusive". Cet octet de fin est optionnel.</td>
+</tr>
+</tbody></table>
+</td></tr>
+
+<tr>
+<td>
+<p align="justify"><i>
+On remarquera les regroupements en fonction de la zone géographique 
+USA/Europe/Japon. Sequential Circuits, principal instigateur de la norme
+ Midi, a logiquement le numéro 1.
+</i>
+</p>
+</td><td>&nbsp;</td>
+<td colspan="2" class="text">
+<p align="justify">
+Les messages "system exclusive" sont entièrement définis par le 
+fabriquant de l'instrument. Ils sont normalement terminés par l'octet de
+ status 0xF7 mais celui-ci est optionel. Il existe des synthés qui 
+oublient effectivement cet octet pour signaler la fin. Pour connaître la
+ structure interne de ces messages, on se reportera à la notice de 
+chaque synthétiseur. L'octet d'identification est attribué à chaque 
+constructeur par le commité du standard Midi.
+</p>
+<pre>0x01 Sequential Circuits
+0x02 Big Briar
+0x03 Octave/Plateau
+0x04 Moog
+0x05 Passport Design
+0x06 Lexicon
+0x11 PAIA
+0x12 Simmons
+0x13 Gentle Electric
+0x14 Fairlight
+0x18 E-Mu
+0x20 Bon Tempi
+0x21 S.I.E.L.
+0x23 SyntheAxe
+0x40 Kawai
+0x41 Roland
+0x42 Korg
+0x43 Yamaha
+0x44 Casio
+0x47 Akai
+</pre>
+         <table border="0" cellpadding="2" cellspacing="0" width="100%">
+          <tbody><tr> 
+            <td class="tableHead2"><a name="realtime">&nbsp;</a>Les messages temps-réel (<i>realtime</i>)</td>
+          </tr>
+        </tbody></table>
+</td>
+</tr>
+
+<tr>
+<td>
+<p align="justify"><i>
+En pratique, ils ont insérés entre les autres messages, comme des
+messages normaux.</i>
+</p>
+</td>
+<td>&nbsp;</td>
+<td colspan="2" class="text">
+<p align="justify">
+Les octets de 0xF8 à 0xFF sont réservés pour des messages
+d'indication de jeu temps-réel. Ils peuvent théoriquement intervenir
+<b> n'importe quand </b>, c'est-à-dire 
+<i> même au milieu des données</i>, et n'affectent pas l'état courant du status.
+Oublier leur particularité peut causer des
+erreurs inattendues dans certains cas.
+</p>
+</td>
+</tr>
+
+<tr>
+<td colspan="4">
+<table class="OpcodeDesc" cellspacing="5">
+<tbody><tr>
+  <td class="name">Horloge</td>
+  <td class="opcode">0xF8</td>
+  <td class="desc">Envoyé 24 fois par tenps</td>
+</tr>
+<tr>
+  <td></td>
+  <td class="opcode">0xF9</td>
+  <td class="desc">Non défini</td>
+</tr>
+<tr>
+  <td class="name">Start</td>
+  <td class="opcode">0xFA</td>
+  <td class="desc">Démarrage du séquenceur, depuis le départ ou depuis la position précisée à l'aide du message système "Position".</td>
+</tr>
+<tr>
+  <td class="name">Continue</td>
+  <td class="opcode">0xFB</td>
+  <td class="desc">Démarrage du séquenceur au point courant</td>
+</tr>
+<tr>
+  <td class="name">Stop</td>
+  <td class="opcode">0xFC</td>
+  <td class="desc">Arrêt du séquenceur. Reprise possible par "continue"</td>
+</tr>
+<tr>
+  <td></td>
+  <td class="opcode">0xFD</td>
+  <td class="desc">Non défini</td>
+</tr>
+<tr>
+  <td class="name">Test de présence (active sensing)</td>
+  <td class="opcode">0xFE</td>
+  <td class="desc">Message de contrôle de l'état de la tranmission, 
+normalement envoyé au moins toutes les 300 milisecondes. Facultatif, 
+donc inutile puisqu'on ne sait pas s'il faut s'attendre à la recevoir ou
+ pas...</td>
+</tr>
+<tr>
+  <td class="name">Réinitialisation</td>
+  <td class="opcode">0xFF</td>
+  <td class="desc">Réinitialisation de l'instrument tel qu'à sa mise 
+sous tension. A utiliser avec modération, quand tout va mal. On évitera 
+tout usage systématique.</td>
+</tr>
+</tbody></table>
+</td></tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td colspan="2" class="text">
+<p align="justify">
+Les messages d'horloge sont émis à la fréquence de 24 message par
+noire et sont utilisés pour la synchronisation de plusieurs machines,
+en particulier les arpégiateurs, les boites à rythmes ou les systèmes
+d'accompagnement automatique. C'est la seule façon qui existe
+pour indiquer le tempo. A cause de cette méthode, la variation brutales de tempo ne sont pas précise.
+</p>
+<p align="justify">
+Start/stop/continue servent avec les séquenceurs.
+On utilise 'continue' pour reprendre à l'endroit où l'on s'était
+arrêté avec 'stop'.
+</p>
+</td>
+</tr>
+      <!-- #EndEditable --> 
+  </tbody></table>
+  </p><p> 
+  <table border="0" cellpadding="0" cellspacing="0" width="80%">
+    <tbody><tr valign="middle"> 
+      <td class="footerOutline"> 
+        <table border="0" cellpadding="1" cellspacing="1" width="100%">
+          <tbody><tr class="footerBody" valign="top"> 
+            <td align="center"><a href="mailto:homestudio@alexandredenis.net"> </a>©&nbsp;2002&nbsp;<a href="mailto:homestudio@alexandredenis.net">Alexandre&nbsp;Denis</a>&nbsp;- 
+              Tous&nbsp;droits&nbsp;réservés. </td>
+            <td align="center"> <a href="http://www.lehomestudio.org/apropos.html#site" style="text-decoration:none; color: black;">Dernière 
+              mise à jour&nbsp;: 
+              <!-- #BeginDate format:Ge1 -->15.11.2002<!-- #EndDate -->
+              </a> </td>
+            <td align="center" valign="middle"> <a href="http://www.lehomestudio.org/apropos.html#site" style="text-decoration:none; color: black;"> 
+              <img src="Le%20Homestudio%20-%20Techniques%20homestudio%20et%20musiques%20%C3%A9lectroniques%20-%20La%20norme%20MIDI_files/wwwcount.gif" alt="[compteur]" border="0"></a> 
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </tbody></table>
+</p></div>
+
+
+</body><!-- #EndTemplate --></html>

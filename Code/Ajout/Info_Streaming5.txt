@@ -1,0 +1,15 @@
+The Streaming library gives you the option of compressing those into “insertion style” code that, if not exactly the same, is reminiscent of the concatenation above:
+
+lcd << "GPS #" << gpsno << " date: " <<
+    day << "-" << month << "-" << year << endl;
+
+This library works for any class that derives from Print:
+
+Serial << "Counter: " << counter;
+lcd << "Temp: " << t.get_temperature() << " degrees";
+my_pstring << "Hi Mom!" << endl;
+
+With the new library you can also use formatting manipulators like this:
+
+Serial << "Byte value: " << _HEX(b) << endl;
+lcd << "The key pressed was " << _BYTE(c) << endl;

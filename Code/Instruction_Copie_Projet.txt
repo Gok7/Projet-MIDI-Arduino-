@@ -1,0 +1,2 @@
+Netbeans ne copie pas correctement un projet arduino.
+Solution : copier le fichier libsam_sam3x8e_gcc_rel.a dans "nomduprojet"\arduino\sam\variants\arduino_due_x\

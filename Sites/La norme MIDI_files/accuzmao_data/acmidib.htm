@@ -1,0 +1,1577 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Evenements et Controleurs MIDI</title>
+</head><body background="navmidi_data/sumtextb.jpg" bgcolor="white" vlink="#0000FF" link="#0000FF"><x-sas-window top="50" bottom="688" left="12" right="859"> 
+
+
+	
+
+<center>
+  <!-- DEBUT DU SCRIPT --> 
+  <style type="text/css">
+<!-- 
+A:hover {color:#FF0000;}
+-->
+</style>
+  <!-- FIN DU SCRIPT --> 
+  <table border="0" width="100%">
+    <tbody><tr> 
+      <td> 
+        <center>
+          <font color="#0000af" size="5"><b><a name="haut"></a>La Norme "M.I.D.I."</b></font> 
+        </center>
+      </td>
+    </tr>
+  </tbody></table>
+  <table border="0" width="50%">
+    <tbody><tr bgcolor="#FFFF99"> 
+      <td> 
+        <center>
+        </center>
+        <div align="center"> 
+          <p><font size="4" face="Verdana, Arial, Helvetica, sans-serif"><a href="#evenement"><font size="3">Les 
+            principaux types d'évenements MIDI</font></a></font></p>
+          <p><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><a href="#controleur">Les 
+            contrôleurs MIDI</a></font></p>
+          </div>
+      </td>
+    </tr>
+  </tbody></table>
+</center>
+<div align="center"> </div>
+<div align="center">
+<center>
+  </center>
+  <center>
+    <p> 
+    <table border="0" width="100%">
+      <tbody><tr> 
+        <td> 
+          <center>
+            <font color="red" size="5"><b><a name="evenement"></a>Les Principaux 
+            types d'évenements "M.I.D.I".</b></font> 
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+    
+  </p></center>
+  <table border="0" width="100%">
+    <tbody><tr align="left" bgcolor="#6666ff"> 
+      <td align="left"><b><font color="white" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">NOTE 
+        ON : </font></b><font color="white" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">une 
+        touche est <b>enfoncée</b> et la vitesse d'enfoncement <b>( vélocité)</b> 
+        est codifié de <b>0 à 127</b> afin de transmettre la <b>nuance</b> 
+        .</font></td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="left"><b><font color="#0000af" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">NOTE 
+        OFF : </font></b><font color="#0000af" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">une 
+        touche est <b>relâchée</b> . Ce code est l'inverse de la 
+        <b>note on</b> .</font></td>
+    </tr>
+    <tr bgcolor="#6666ff"> 
+      <td align="left"><b><font color="white" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">AFTERTOUCH 
+        : </font></b><font color="white" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">appelé 
+        <b>chanel Pressure</b> correspond à la <b>pression</b> que l'on 
+        peut effectuer sur la touche . La valeur va de <b>0 à 127</b> .</font></td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="left"><b><font color="#0000af" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">PITCH 
+        BEND :</font></b><font color="#0000af" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"> 
+        l'action de la <b>molette</b> de <b>Pitch Bend</b> est codifié 
+        en <b>MIDI.</b></font></td>
+    </tr>
+    <tr bgcolor="#6666ff"> 
+      <td align="left"><b><font color="white" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">PROGRAM 
+        CHANGE :</font></b><font color="white" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"> 
+        le <b>changement</b> de <b>programme</b> correspond à la sélection 
+        d'un son sur un synthétiseur. Les valeurs théoriques sont 
+        de <b>16 384</b> soit <b>128 banques</b> de <b>128 sons</b> .</font></td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="left"><b><font color="#0000af" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">CONTROL 
+        CHANGE :</font></b><font color="#0000af" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"> 
+        Le changement de <b>contrôle</b> correspond au réglages des 
+        <b>paramètres</b> sonores d'un synthétiseur <b>(volume , 
+        pan , expression , sustain</b> etc...<b>)</b></font></td>
+    </tr>
+    <tr bgcolor="#6666ff"> 
+      <td align="left"><b><font color="white" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">SYSTEME 
+        EXCLUSIFS (SysEx) : </font></b><font color="white" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">code 
+        propre à <b>chaque constructeur</b> permettant la programmation 
+        en profondeur de chaque synthétiseur . </font></td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="left"><b><font color="#0000af" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"> 
+        Le MIDI CLOCK : </font></b><font color="#0000af" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">c'est 
+        une <b>horloge</b> de <b>synchronisation</b> entre 2 <b>séquenceurs 
+        MIDI </b> .</font></td>
+    </tr>
+    <tr bgcolor="#6666ff"> 
+      <td align="left"><b><font color="white" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Le 
+        MIDI TIME CODE (MTC) : </font></b><font color="white" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">est 
+        un code qui permet la <b>synchronisation</b> d'un <b>multipistes</b> ou 
+        d'un <b>magnétoscope</b> avec un code <b>SMPTE</b> à un 
+        <b>séquencer</b> ou un <b>ordinateur</b> . </font></td>
+    </tr>
+  </tbody></table>
+  <div align="left"><a href="#haut"><img src="acmidib_data/flechea.gif" border="0" width="22" height="24">Haut 
+    de Page</a> </div>
+  <p>&nbsp;</p>
+  <table border="0" width="100%">
+    <tbody><tr> 
+      <td> 
+        <center>
+          <font color="red" size="5"><b><a name="controleur"></a>Les contrôleurs 
+          "M.I.D.I."</b></font> 
+        </center>
+      </td>
+    </tr>
+  </tbody></table>
+  <table border="0" width="100%">
+    <tbody><tr bgcolor="#6666ff"> 
+      <td><font color="#FFFFFF" size="3" face="Arial">Les <b>contrôleurs 
+        MIDI</b> sont un ensemble de<b> 128 messages</b>, numérotés 
+        de <b>0</b> à <b>127</b> qui sont prévus pour contrôler 
+        divers paramètres <b>MIDI</b>. Certains contrôleurs sont 
+        réservés à des fonctions simples : réglage 
+        du <b>volume</b> <b>(control n°7)</b>, du <b>panoramique</b> <b>(control 
+        n°10)</b> etc. . . D'autres contrôleurs sont réservés 
+        à des fonctions moins courantes <b>(</b>exemple <b> attack time 
+        : control n°73)</b>. Beaucoup de contrôleurs n'ont pas été 
+        officiellement définis ce qui permet aux constructeurs d'implémenter 
+        de nouvelles fonctions de contrôle spécifiques sur leurs 
+        propres appareils. Quand vous entrez des messages de contrôleurs 
+        <b>MIDI</b> dans votre séquencer, il est important de les rentrer 
+        dans le bon ordre en laissant quelques instant entre chaque évenement 
+        pour permettre aux appareils auquels ils sont destinés de réagir.</font></td>
+    </tr>
+  </tbody></table>
+  <p>&nbsp;</p><table border="0" width="100%">
+    <tbody><tr> 
+      <td> 
+        <div align="center"><font color="#0000FF" face="Arial, Helvetica, sans-serif">Liste 
+          des <b>contrôleurs MIDI</b> (en <font color="#FF0000">rouge</font> 
+          les plus utilisés) <b> :</b></font></div>
+      </td>
+    </tr>
+  </tbody></table>
+  <table border="0" width="100%">
+    <tbody><tr align="center" bgcolor="#6633cc"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="white">PC#</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FFFFFF" size="2"><b><font size="3" face="Arial, Helvetica, sans-serif">Contrôleur 
+          MIDI</font> </b></font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="white">PC#</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF" size="2"><b><font color="#FFFFFF" size="3" face="Arial, Helvetica, sans-serif">Contrôleur 
+          MIDI</font></b></font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="white">PC#</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FFFFFF" size="2"><b><font size="3" face="Arial, Helvetica, sans-serif">Contrôleur 
+          MIDI</font></b></font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="white">PC#</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FFFFFF" size="2"><b><font size="3" face="Arial, Helvetica, sans-serif">Contrôleur 
+          MIDI</font></b></font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          O 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> Bank Select MSB </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">32</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> <font color="#FF0000">Bank Select LSB </font></font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">64 </font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> <font color="#FF0000">Sustain Pedal</font> </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">96</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000FF"> <font color="#0000aF">Data Increment</font> </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          1 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> Modulation </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">33</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Modulation LSB </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">65</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> <font color="#FF0000">Porta Pedal </font></font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">97</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000FF"> Data decrement </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          2 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> Breath Control </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">34</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Breath Control LSB </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">66</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> Sostenuto Pedal </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">98</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000FF"> <font color="#0000aF">NRPN LSB</font> </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          3 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Control 3</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">35</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Aftertouch LSB </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">67</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> Soft Pedal </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          99 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000FF"> <font color="#0000aF">NRPN MSB</font> </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          4 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0033"> Foot Control </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">36</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Foot Control LSB </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">68</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Legato Footswitch </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">100</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000FF"> <font color="#0000aF">RPN LSB</font> </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          5 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0033"> Portamento Time </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">37</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Portamento Time LSB</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          69 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Hold Pedal 2 </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">101</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000FF"> <font color="#0000aF">RPN MSB</font> </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          6 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0033"> Data Entry MSB </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">38</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Data Entry LSB </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">70</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Sound Variation </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">102</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 102</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          7 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0033"> Volume </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">39</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Volume</font> <font color="#0000aF">LSB</font><font color="#0000aF"> 
+          </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">71</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Resonnance </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">103</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 103</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          8 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0033"> Balance </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">40</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Balance LSB </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">72</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Release Time </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">104</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 104</font><font color="#0000af"> </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">9</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Control 9 </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">41</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 41(Control 9 LSB) </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">73</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Attack Time</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">105</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 105</font><font color="#0000af"> </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          10 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> Pan </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">42</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Pan LSB</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">74</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> LPF Cutoff </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">106</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 106</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">11</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> Expression </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">43</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Expression</font> LSB 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">75</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 75 </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">107</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 107</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">12</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Control 12 </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">44</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 44(Control 12 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">76</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 76</font><font color="#0000af"> </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">108</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 108</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">13</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Control 13 </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">45</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 45(Control 13 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">77</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 77</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">109</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 109</font><font color="#0000af"> </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">14</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 14 </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">46</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 46(Control 14 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">78</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 78</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">110</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 110</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">15</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Control 15 </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">47</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 47(Control 15 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          79 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 79</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">111</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 111</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">16</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 16</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">48</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 48(Control 16 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">80</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 80</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">112</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 112</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">17</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 17</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          49 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 49(Control 17 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">81</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 81</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">113</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 113</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">18</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 18</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">50</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 50</font><font color="#0000aF">(Control 
+          18 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">82</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 82</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">114</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 114</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">19</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 19</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">51</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 51(Control 19 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">83</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 83</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">115</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 115</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">20</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 20</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">52</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 52(Control 20 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">84</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          Portamento 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">116</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 116</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">21</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 21</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">53</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 53</font><font color="#0000aF">(Control 
+          21 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">85</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 85</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">117</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 117</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">22</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 22</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">54</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 54(Control 22 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">86</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 86</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">118</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 118</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">23</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 23</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">55</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 55(Control 23 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">87</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 87</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">119</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 119</font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">24</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 24</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">56</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 56(Control 24 LSB) </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">88</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 88</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">120</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> All Sound off </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">25</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 25</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">57</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 57(Control 25 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          89 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 89</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">121</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> Reset all Controllers </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">26</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 26</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">58</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 58(Control 26 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">90</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 90</font><font color="#0000af"> </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">122</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> Local Control </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">27</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 27</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          59 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 59(Control 27 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">91</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> Reverb </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">123</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> All Note off </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">28</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 28</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">60</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 60(Control 28 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">92</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> Tremolo depth </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">124</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Omni Mode off </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          29 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 29</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">61</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 61(Control 29 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">93</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#FF0000"> Chorus Depth </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">125</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Omni Mode on </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffffcc"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">30</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 30</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">62</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 62(Control 30 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">94</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Detune </font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">126</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Mono Mode on </font> 
+        </center>
+      </td>
+    </tr>
+    <tr bgcolor="#ffcc33"> 
+      <td align="center" width="28"> 
+        <center>
+          <font color="#0000af">31</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 31</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">63</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Control 63(Control 31 LSB)</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">95</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF">Phaser Depth</font> 
+        </center>
+      </td>
+      <td width="28"> 
+        <center>
+          <font color="#0000af">127</font> 
+        </center>
+      </td>
+      <td> 
+        <center>
+          <font color="#0000aF"> Poly Mode on </font> 
+        </center>
+      </td>
+    </tr>
+  </tbody></table>
+  <center>
+    <p></p>
+    <p></p>
+  </center>
+  <div align="left"><a href="#haut"><img src="acmidib_data/flechea.gif" border="0" width="22" height="24">Haut 
+    de Page</a>
+    <table align="center" border="0" width="30%">
+      <tbody><tr> 
+        <td> 
+          <div align="center"><a href="http://claude.borne.perso.sfr.fr/indexa.html" target="_top"><img src="acmidib_data/home.gif" alt="HOME Page" border="0" width="70" height="48"></a></div>
+        </td>
+      </tr>
+    </tbody></table>
+  </div>
+</div>
+<center>
+</center>
+<div align="center"><font color="#000099" size="-1" face="Arial">Copyright © 
+  2000 Claude BORNE</font> </div>
+
+
+
+</x-sas-window></body></html>

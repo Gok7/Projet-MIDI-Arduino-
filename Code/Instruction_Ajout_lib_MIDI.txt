@@ -1,0 +1,15 @@
+voir http://playground.arduino.cc/Main/MIDILibrary
+
+What do I need to do?
+
+After downloading the library, unzip it to the libraries folder 
+(arduino-00xx/hardware/libraries), then reboot the Arduino IDE or compile your sketch, it will compile the library.
+
+If you are using Mac OS X, the libraries folder is hidden in the Arduino application:
+
+Right-click on Arduino.app, "Show package content", then put the library folder in "Contents/Resources/Java/hardware/libraries".
+
+Include the library using the menu in the IDE, or type #include <MIDI.h>
+
+You are now ready to use the library. look at the reference page to learn how to use it, 
+or the examples given. Just don't forget to enable the I/O communications with MIDI.begin... 
